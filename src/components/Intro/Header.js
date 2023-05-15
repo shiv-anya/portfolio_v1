@@ -11,19 +11,29 @@ const Header = () => {
           <div>
             <ul className="flex">
               <li>
-                <a className="pr-10">About</a>
+                <a className="pr-10" href="#about">
+                  About
+                </a>
               </li>
               <li>
-                <a className="pr-10">Skills</a>
+                <a className="pr-10" href="#skills">
+                  Skills
+                </a>
               </li>
               <li>
-                <a className="pr-10">Experience</a>
+                <a className="pr-10" href="#experience">
+                  Work Experiences
+                </a>
               </li>
               <li>
-                <a className="pr-10">Projects</a>
+                <a className="pr-10" href="#projects">
+                  Projects
+                </a>
               </li>
               <li>
-                <a className="pr-10">Contact</a>
+                <a className="pr-10" href="#contact">
+                  Contact
+                </a>
               </li>
               <li></li>
             </ul>

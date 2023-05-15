@@ -4,7 +4,7 @@ import Header from "./Header";
 const Banner = () => {
   return (
     <Fragment>
-      <div>
+      <div id="about">
         <Header />
         <div id="about" className="flex">
           <div className="flex-1 p-10">
@@ -12,10 +12,9 @@ const Banner = () => {
               Hi, all. I'm Shivangi <span class="wave">👋</span>
             </h1>
             <p className="text-justify text-2xl">
-              A passionate Full Stack Software Developer 🚀 having an experience
-              of building Web and Mobile applications with JavaScript / Reactjs
-              / Nodejs / React Native and some other cool libraries and
-              frameworks.
+              Buckle up and get ready to embark on a wild coding adventure!🚀As
+              a full-stack developer, I bring together the power of front-end
+              wizardry and back-end sorcery to craft digital masterpieces.
             </p>
             <div className="mb-10">contacts</div>
             <div>
