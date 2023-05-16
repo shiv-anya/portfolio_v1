@@ -4,7 +4,11 @@ const ProjectCard = (props) => {
   return (
     <Fragment>
       <div className="shadow-2xl h-96 w-80 rounded-lg my-5">
-        <div className="h-44 flex items-center justify-center bg-purple-800 rounded-t-lg"></div>
+        <img
+          src={props.src}
+          alt="project"
+          className="h-44 w-full rounded-t-lg"
+        />
         <div className="flex flex-col items-center p-9">
           <h2 className="text-xl">{props.name}</h2>
           <p className="text-xl">{props.timeline}</p>
