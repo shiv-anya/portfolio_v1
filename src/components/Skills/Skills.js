@@ -9,6 +9,7 @@ const Skills = () => {
           <iframe
             src="https://embed.lottiefiles.com/animation/132994"
             className="h-full w-full"
+            title="woman coding"
           ></iframe>
         </div>
         <div className="flex-1 p-10 text-justify">
