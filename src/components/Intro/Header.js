@@ -3,10 +3,12 @@ import React, { Fragment } from "react";
 const Header = () => {
   return (
     <Fragment>
-      <header>
+      <header className="fixed w-full bg-white font-monte z-10">
         <nav className="flex p-10 justify-between text-2xl">
-          <div>
-            <span>SG</span>
+          <div className="font-cedar italic">
+            <span>{"</"}</span>
+            <span>Sg</span>
+            <span>{">"}</span>
           </div>
           <div>
             <ul className="flex">
@@ -18,11 +20,6 @@ const Header = () => {
               <li>
                 <a className="pr-10" href="#skills">
                   Skills
-                </a>
-              </li>
-              <li>
-                <a className="pr-10" href="#experience">
-                  Work Experiences
                 </a>
               </li>
               <li>
