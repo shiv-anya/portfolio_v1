@@ -10,13 +10,22 @@ const ProjectCard = (props) => {
           className="h-44 w-full rounded-t-lg"
         />
         <div className="flex flex-col items-center p-5 justify-between">
-          <h2 className="text-2xl py-2 text-center">{props.name}</h2>
+          <h2 className="text-2xl py-2 text-center text-black max-md:text-xl py-0">
+            {props.name}
+          </h2>
           <p className="text-sm py-2">({props.timeline})</p>
-          <p className="text-center text-xl">{props.about}</p>
-          <div className="py-2">
+          <p className="text-center text-xl text-black max-md:text-base">
+            {props.about}
+          </p>
+          <div className="py-2 text-black max-md:text-base">
             <ul className="flex flex-wrap justify-center">
-              {props.stacks.map((s) => (
-                <li className="mr-3 shadow-inner p-1 rounded-sm mt-2">{s}</li>
+              {props.stacks.map((s, index) => (
+                <li
+                  className="mr-3 shadow-inner p-1 rounded-sm mt-2"
+                  key={index}
+                >
+                  {s}
+                </li>
               ))}
             </ul>
           </div>

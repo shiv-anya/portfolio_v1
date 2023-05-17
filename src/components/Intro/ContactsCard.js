@@ -3,7 +3,7 @@ import React, { Fragment } from "react";
 const ContactCard = () => {
   return (
     <Fragment>
-      <div className="flex">
+      <div className="flex max-md:justify-center items-end">
         <a
           href={"https://github.com/shiv-anya"}
           className="mr-5  bg-black p-2 w-12 rounded-full flex justify-center items-center hover:bg-black"

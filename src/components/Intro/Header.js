@@ -1,10 +1,11 @@
 import React, { Fragment } from "react";
+import BurgerMenu from "./BurgerMenu";
 
 const Header = () => {
   return (
     <Fragment>
-      <header className="fixed w-full bg-white font-monte z-10">
-        <nav className="flex p-10 justify-between text-2xl">
+      <header className="fixed w-full bg-white font-monte z-10 text-black max-md:hidden">
+        <nav className="flex p-10 justify-between text-2xl max-md:p-0">
           <div className="font-cedar italic">
             <span>{"</"}</span>
             <span>Sg</span>
@@ -37,6 +38,7 @@ const Header = () => {
           </div>
         </nav>
       </header>
+      <BurgerMenu />
     </Fragment>
   );
 };

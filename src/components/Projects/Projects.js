@@ -28,11 +28,11 @@ const data = [
     github: "https://github.com/shiv-anya/insta-clone",
   },
   {
-    name: "User Module",
+    name: "User Management Module",
     timeline: "Sept 2022 - Current",
     about:
       "User Management Module. To manage your employees data at one place. Having two modes Admin and User. Includes all CRUD ops with authentication using email verification.",
-    stacks: ["React", "Nodejs", "MongoDB", "Express", "OAuth", "JWT"],
+    stacks: ["Vuejs", "Nodejs", "MongoDB", "Express", "OAuth", "JWT"],
     src: UserModule,
     live: "https://user-module22.netlify.app/",
     github: "https://github.com/shiv-anya/user_module",
@@ -71,11 +71,17 @@ const data = [
 const Projects = () => {
   return (
     <Fragment>
-      <div className="my-10 flex flex-col items-center" id="projects">
-        <h1 className="m-10 text-5xl">Projects</h1>
+      <div
+        className="mb-10 flex flex-col items-center max-md:mb-5"
+        id="projects"
+      >
+        <h1 className="m-10 text-5xl text-black max-md:m-0 my-5 max-md:text-2xl">
+          Projects
+        </h1>
         <div className="flex flex-wrap justify-evenly">
-          {data.map((p) => (
+          {data.map((p, index) => (
             <ProjectCard
+              key={index}
               name={p.name}
               timeline={p.timeline}
               about={p.about}
@@ -90,7 +96,7 @@ const Projects = () => {
           href="https://github.com/shiv-anya"
           target="_blank"
           rel="noreferrer"
-          className="text-xl uppercase bg-purple-800 text-white py-3 px-5 rounded-lg hover:bg-white hover:text-purple-800 hover:border-2 hover:border-purple-800 mt-5"
+          className="text-xl uppercase bg-purple-800 text-white py-3 px-5 rounded-lg hover:bg-white hover:text-purple-800 hover:border-2 hover:border-purple-800 mt-5 max-md:py-1 max-md:px-3 max-md:text-base max-md:rounded-sm max-md:mr-2"
         >
           See more
         </a>

@@ -61,11 +61,11 @@ const SkillsCard = () => {
           return (
             <li
               key={i}
-              className="mr-5 mt-5 flex flex-col justify-between items-center"
+              className="mr-5 mt-5 flex flex-col justify-between items-center max-md:mx-2"
               name={skills.skillName}
             >
               <i
-                className={`${skills.fontAwesomeClassname} text-6xl text-gray-400 hover:text-purple-600`}
+                className={`${skills.fontAwesomeClassname} text-6xl text-gray-400 hover:text-purple-600 max-md:text-5xl`}
               ></i>
               <p className="text-xs mt-1 capitalize">{skills.skillName}</p>
             </li>
