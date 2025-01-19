@@ -1,21 +1,21 @@
 import React, { Fragment } from "react";
 import ProjectCard from "./ProjectCard";
-import BudgetBud from "../../assets/budgetBud.png";
-import Appetizer from "../../assets/Appetizer.png";
-import UserModule from "../../assets/UserModule.png";
+import StreamPlay from "../../assets/streamplay.jpg";
 import InstaClone from "../../assets/insta_clone.png";
-import FrontendTask from "../../assets/Frontend-Task.png";
-import SpaceX from "../../assets/SpaceX.png";
+import YinYang from "../../assets/yinyang.png";
+import Livestock from "../../assets/livestock.png";
+import Ticko from "../../assets/tickitoff.png";
+import AngryGrid from "../../assets/angrygrid.png";
 const data = [
   {
-    name: "BudgetBud",
-    timeline: "May 2023 - Current",
+    name: "Stream Play",
+    timeline: "Dec 2024 - Current",
     about:
-      "BudgetBud is expense tracker with basic CRUD operations. And representation of monthly expenditure and yearly expenditure by charts",
-    stacks: ["React", "Nodejs", "MongoDB", "Express", "Chart.js"],
-    src: BudgetBud,
-    live: "https://budgetbud23.netlify.app/",
-    github: "https://github.com/shiv-anya/BudgetBud",
+      "A chat application with real-time messaging, typing indicators, and group chats, built using React and GetStream.io SDK.",
+    stacks: ["React", "TailwindCSS", "Redux", "GetStream SDK"],
+    src: StreamPlay,
+    live: "",
+    github: "https://github.com/shiv-anya/stream-play",
   },
   {
     name: "Insta Clone",
@@ -28,44 +28,42 @@ const data = [
     github: "https://github.com/shiv-anya/insta-clone",
   },
   {
-    name: "User Management Module",
-    timeline: "Sept 2022 - Current",
+    name: "Yin and Yang (Meditation Website)",
+    timeline: "Jan 2024 - Jan 2024",
     about:
-      "User Management Module. To manage your employees data at one place. Having two modes Admin and User. Includes all CRUD ops with authentication using email verification.",
-    stacks: ["Vuejs", "Nodejs", "MongoDB", "Express", "OAuth", "JWT"],
-    src: UserModule,
-    live: "https://user-module22.netlify.app/",
-    github: "https://github.com/shiv-anya/user_module",
+      "A yin yang website focusing on an interactive website with theme inspired by nature.",
+    stacks: ["Next.js", "React.js", "Tailwind CSS"],
+    src: YinYang,
+    live: "https://yin-yang-meditation.vercel.app/",
+    github: "https://github.com/shiv-anya/yin_yang_meditation_website",
   },
   {
-    name: "Appetizer",
-    timeline: "May 2022 - Current",
+    name: "Livestock",
+    timeline: "Nov 2024 - Current",
     about:
-      "Restaurant app. Which is created keeping responsiveness, UI experience and theme in mind.",
-    stacks: ["HTML", "CSS"],
-    src: Appetizer,
-    live: "https://appetizer-res.netlify.app/",
-    github: "https://github.com/shiv-anya/restaurant",
+      "Stock broadcasting live stock prices and a search feature to track your stocks.",
+    stacks: ["React.js", "TailwindCSS", "Rechart.js", "Socket"],
+    src: Livestock,
+    live: "https://livestock-client.vercel.app/",
+    github: "https://github.com/shiv-anya/livestock",
   },
   {
-    name: "Covid Cases Tracker",
-    timeline: "May 2023 - Current",
-    about:
-      "It keep track of covid cases and it's representation countrywise and comparing deaths, total cases and recovered cases by line graph.",
-    stacks: ["React", "Chart.js", "React Leaflet"],
-    src: FrontendTask,
-    live: "https://frontend-task23.netlify.app/",
-    github: "https://github.com/shiv-anya/Frontend-task",
+    name: "Tick It Off",
+    timeline: "Oct 2024 - Current",
+    about: "A to-do app with filtering, sticky notes and a dynamic calendar.",
+    stacks: ["React", "Redux"],
+    src: Ticko,
+    live: "https://tick-it-off.vercel.app/",
+    github: "https://github.com/shiv-anya/to-do",
   },
   {
-    name: "SpaceX Capsules Record",
-    timeline: "April 2023 - Current",
-    about:
-      "Here you can know about all spaceX capsules and their details if you a hardcore fan. Filter records on basis of name, status and id.",
+    name: "Angry Grid Clash",
+    timeline: "Oct 2024 - Current",
+    about: "An interactive game of tic-tac-toe based on angry bird theme.",
     stacks: ["React"],
-    src: SpaceX,
-    live: "https://spacex23.netlify.app/",
-    github: "https://github.com/shiv-anya/ShivangiGupta_Frontend-Developer",
+    src: AngryGrid,
+    live: "https://angry-grid-clash.vercel.app/",
+    github: "https://github.com/shiv-anya/angry-grid-clash",
   },
 ];
 const Projects = () => {

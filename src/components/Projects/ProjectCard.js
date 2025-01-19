@@ -4,11 +4,10 @@ const ProjectCard = (props) => {
   return (
     <Fragment>
       <div className="shadow-2xl h-auto w-80 rounded-lg my-5">
-        <img
-          src={props.src}
-          alt="project"
-          className="h-44 w-full rounded-t-lg"
-        />
+        <div
+          style={{ backgroundImage: `url(${props.src})` }}
+          className={`h-44 w-full rounded-t-lg bg-cover bg-left bg-no-repeat`}
+        ></div>
         <div className="flex flex-col items-center p-5 justify-between">
           <h2 className="text-2xl py-2 text-center text-black max-md:text-xl py-0">
             {props.name}
